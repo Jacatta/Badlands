@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2d background.CSharp", "2d background.CSharp.csproj", "{722A8761-184D-77BF-BBF8-264720261DC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2d background.CSharp.Editor", "2d background.CSharp.Editor.csproj", "{F9377A44-F3B2-B7A3-C485-D3689F47A794}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{722A8761-184D-77BF-BBF8-264720261DC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{722A8761-184D-77BF-BBF8-264720261DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{722A8761-184D-77BF-BBF8-264720261DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{722A8761-184D-77BF-BBF8-264720261DC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9377A44-F3B2-B7A3-C485-D3689F47A794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9377A44-F3B2-B7A3-C485-D3689F47A794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9377A44-F3B2-B7A3-C485-D3689F47A794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9377A44-F3B2-B7A3-C485-D3689F47A794}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
