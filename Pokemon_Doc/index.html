@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>
+  body {
+    padding: 100px;
+    width: 1000px;
+    margin: auto;
+    text-align: left;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #121212;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+</style>
+<title>COMSC 165 Final Project</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+</head>
+
+<body>
+
+<h1 align="middle">COMSC 165: Advanced Programming with C and C++</h1>
+<h1 align="middle">Final Project: Pokemon Demo</h1>
+<h2 align="middle">Jonathan Cattarin</h2>
+
+<br><br>
+
+<div>
+
+<h2 align="middle">Overview</h2>
+<p>For this final project I woked on a team of 3 and created a demo Pokemon game with a few variations. While the class was in c++ our instructor encouraged us to follow our interests, so this project was our first time developing in c# and in unity. I created 2 scenes in the project, the OverWorld scene and the Traveling scene. I also created or edited all art assets in the project. </p>
+
+<h2 align="middle">Overworld</h2>
+<p>The Overworld scene allows the player to explore the world and to enter random battles with wild Pokemon. The Overworld was made with TileMap using simplistic design while encouraging the player to explore each corner of the map. A short gif showing functionality is provided below.</p>
+
+<div align="center">
+  <table style="width=100%">
+    <tr>
+      <td align="middle">
+        <img src="images/OverWorld_Edit.gif" width="480px" />
+        <figcaption align="middle">OverWorld Scene.</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="center">
+  <table style="width=100%">
+    <tr>
+      <td align="middle">
+        <img src="images/Overworld.png" />
+        <figcaption align="middle">Overworld Map</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<h3 align="left">Summary</h3>
+<p>In this scene I created the map using the open source software: Tiled. I also developed character movement and colliders. I further enabled player/bush collisions to have a 1/35 change to result in a pokemon encounter.</p>
+
+<h3 align="left">Challanges</h3>
+<p>Making it possible for the player to re-enter the scene at the same coordiates at which they left proved to be a challenge. Through collaboration we solved this by setting playerPrefs: "PlayerPrefs.SetFloat("PlayerX", player.transform.position.x)" for x and y.</p>
+
+<div align="center">
+  <table style="width=100%">
+    <tr>
+      <td align="middle">
+        <img src="images/Encounter_Script.png" />
+        <figcaption align="middle">Encounter Script</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<h2 align="middle">Travel</h2>
+<p>The purpose of this scene is meant to be a more event filled fast travel. While the player still has grass filled areas to explore, this travel scene is a chance for a different kind of encounter. These include a rare Pokemon battle, random loot, or even a new path to a secret area. In this scene a button will occasionally pop up prompting the player to "investigate", this button only stays active for a short time. </p>
+
+<div align="center">
+  <table style="width=100%">
+      <td align="middle">
+        <video width="720" height="370" controls>
+          <source src="images/Traveler.mp4" type="video/mp4">
+        </video>
+		<figcaption align="middle">Travel Scene</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<h3 align="left">Summary</h3>
+<p>In this scene I created all the art assets in Photoshop. I separated them into three levels:<br></br>Background - Trees and hills <br>Middleground - Trainer, eevee and ground<br> Forground - Falling leaves and moving trees</p>
+
+<div align="center">
+  <table style="width=100%">
+    <tr>
+	  <td align="middle">
+        <img src="images/TravelBackground_1.jpg" width="1060px" />
+        <figcaption align="middle">BackGround</figcaption>
+      </td>
+	</tr>
+  </table>
+</div>
+
+<br></br>
+<br></br>
+<br></br>
+
+<div align="center">
+  <table style="width=100%">
+    <tr>
+	  <td align="middle">
+        <img src="images/trainerWalk.png" width="1060px" />
+        <figcaption align="middle">MiddleGround</figcaption>
+      </td>
+	</tr>
+  </table>
+</div>
+
+<br></br>
+<br></br>
+<br></br>
+
+<div align="center">
+  <table style="width=100%">
+    <tr>
+	  <td align="middle">
+		<img src="images/passingTrees1.png" width="1060px" />
+        <figcaption align="middle">ForGround</figcaption>
+      </td>
+	</tr>
+  </table>
+</div>
+
+<br></br>
+<br></br>
+<br></br>
+
+<div align="center">
+  <table style="width=100%">
+    <tr>
+	  <td align="middle">
+        <img src="images/try2.jpg" width="1060px" />
+        <figcaption align="middle">FullScene</figcaption>
+      </td>
+	</tr>
+  </table>
+</div>	
+
+
+
+<h2 align="Middle">Extra</h2>
+<p>Having grown up with Pokemon, my team and I had several ideas which we believed would improve the cookie cutter Pokemon games.
+ One element we wanted to improve was the idea of Pokemon loyalty/individuality. The second issue we aimed to improve was the in game economy.
+To fix these issues we thought up a way to treat pokemon as individuals and not property by incorperating contracts with Pokemon.
+ Pokemon are not property, thus they need to agree to want to be in your party.
+ To make this make sense we made the world of pokemon a little darker. Pokemon are now greedy creatures, they attack stray travelers in hopes of collecting any loot they can.
+ If you defeat a Pokemon in battle they will drop money and loot as they retreat. You can also contract a Pokemon to join you during your battle. 
+In order to escape a Pokemon battle you can throw coins, the Pokemon will be distracted for a short time trying to pick them up. You can also throw a delicious berry causing the wild Pokemon to lose track of you for a short time. 
+Pokemon contracts have expirations, depending on how you treat your Pokemon team you will gain renown and loyalty points with each Pokemon. Eventually Pokemon may opt to stay in your party free of contract.</p>
+<h2 align="Middle">UI Plans</h2>
+<p>I developed several UI Ideas for our Battle scene. Due to time these were never implimented.</p>
+
+<div align="center">
+  <table style="width=100%">
+    <tr>
+	  <td align="middle">
+	    <img src="images/BattleUI_Atk.png" width="1060px" />
+        <figcaption align="middle">Battle Scene Attack</figcaption>
+        <img src="images/BattleUI.png" width="1060px" />
+        <figcaption align="middle">Battle Scene Info</figcaption>
+      </td>
+	</tr>
+  </table>
+</div>	
+
+
+<h3 align="left">ShoutOut</h3>
+<p> Sara Maemoto.<br><a href="https://github.com/SashimiGirl/PokemonDemo">Saras work</a>  <br> This project would not have been possible without our resident debugger. She assisted with everyones code and developed the Intro, Battle, Hospital and Backpack</p>
+<h3 align="left">Resources</h3>
+<p>A big thanks to Thorbjørn Lindeijer for <a href="https://github.com/SashimiGirl/PokemonDemo">Tiled</a></p>
+
+
+</body>
+</html>
